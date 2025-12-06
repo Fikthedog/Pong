@@ -17,15 +17,17 @@ brew install sdl2
 
 ## Compilation
 
+Use one of the commands below to compile on macOS (Homebrew):
+
 ```bash
+# Direct clang compile (explicit include/lib paths)
 clang -g main.c -o Pong -I/opt/homebrew/include/SDL2 -D_THREAD_SAFE -L/opt/homebrew/lib -lSDL2
-```
 
-Alternatively, you can use the SDL2 config tool:
-
-```bash
+# Or use sdl2-config to populate flags automatically
 clang -g main.c -o Pong $(sdl2-config --cflags --libs)
 ```
+
+Note: the source includes SDL as `#include <SDL2/SDL.h>` when using the Homebrew include path above.
 
 ## Running the Game
 

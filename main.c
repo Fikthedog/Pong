@@ -166,7 +166,7 @@ void draw_digit(SDL_Renderer *renderer, int digit, int x, int y, int scale) {
     
     // Simple 7-segment-like digit drawing
     switch(digit) {
-        case 0:
+        case 0: {
             SDL_Rect top = {x, y, w, scale};
             SDL_Rect mid = {x, y + h, w, scale};
             SDL_Rect bot = {x, y + 2*h, w, scale};
@@ -181,11 +181,13 @@ void draw_digit(SDL_Renderer *renderer, int digit, int x, int y, int scale) {
             SDL_RenderFillRect(renderer, &right_top);
             SDL_RenderFillRect(renderer, &right_bot);
             break;
-        case 1:
+        }
+        case 1: {
             SDL_Rect r1 = {x + w, y + scale, scale, 2*h + scale};
             SDL_RenderFillRect(renderer, &r1);
             break;
-        case 2:
+        }
+        case 2: {
             SDL_Rect t2 = {x, y, w, scale};
             SDL_Rect m2 = {x, y + h, w, scale};
             SDL_Rect b2 = {x, y + 2*h, w, scale};
@@ -197,7 +199,8 @@ void draw_digit(SDL_Renderer *renderer, int digit, int x, int y, int scale) {
             SDL_RenderFillRect(renderer, &rt2);
             SDL_RenderFillRect(renderer, &lt2);
             break;
-        case 3:
+        }
+        case 3: {
             SDL_Rect t3 = {x, y, w, scale};
             SDL_Rect m3 = {x, y + h, w, scale};
             SDL_Rect b3 = {x, y + 2*h, w, scale};
@@ -209,7 +212,8 @@ void draw_digit(SDL_Renderer *renderer, int digit, int x, int y, int scale) {
             SDL_RenderFillRect(renderer, &rt3t);
             SDL_RenderFillRect(renderer, &rt3b);
             break;
-        case 4:
+        }
+        case 4: {
             SDL_Rect lt4 = {x - scale/2, y + scale, scale, h};
             SDL_Rect m4 = {x, y + h, w, scale};
             SDL_Rect rt4 = {x + w, y, scale, 2*h + scale};
@@ -217,7 +221,8 @@ void draw_digit(SDL_Renderer *renderer, int digit, int x, int y, int scale) {
             SDL_RenderFillRect(renderer, &m4);
             SDL_RenderFillRect(renderer, &rt4);
             break;
-        case 5:
+        }
+        case 5: {
             SDL_Rect t5 = {x, y, w, scale};
             SDL_Rect m5 = {x, y + h, w, scale};
             SDL_Rect b5 = {x, y + 2*h, w, scale};
@@ -229,7 +234,8 @@ void draw_digit(SDL_Renderer *renderer, int digit, int x, int y, int scale) {
             SDL_RenderFillRect(renderer, &lt5);
             SDL_RenderFillRect(renderer, &rt5);
             break;
-        case 6:
+        }
+        case 6: {
             SDL_Rect t6 = {x, y, w, scale};
             SDL_Rect m6 = {x, y + h, w, scale};
             SDL_Rect b6 = {x, y + 2*h, w, scale};
@@ -243,13 +249,15 @@ void draw_digit(SDL_Renderer *renderer, int digit, int x, int y, int scale) {
             SDL_RenderFillRect(renderer, &lt6b);
             SDL_RenderFillRect(renderer, &rt6b);
             break;
-        case 7:
+        }
+        case 7: {
             SDL_Rect t7 = {x, y, w, scale};
             SDL_Rect rt7 = {x + w, y + scale, scale, 2*h + scale};
             SDL_RenderFillRect(renderer, &t7);
             SDL_RenderFillRect(renderer, &rt7);
             break;
-        case 8:
+        }
+        case 8: {
             SDL_Rect t8 = {x, y, w, scale};
             SDL_Rect m8 = {x, y + h, w, scale};
             SDL_Rect b8 = {x, y + 2*h, w, scale};
@@ -265,7 +273,8 @@ void draw_digit(SDL_Renderer *renderer, int digit, int x, int y, int scale) {
             SDL_RenderFillRect(renderer, &rt8t);
             SDL_RenderFillRect(renderer, &rt8b);
             break;
-        case 9:
+        }
+        case 9: {
             SDL_Rect t9 = {x, y, w, scale};
             SDL_Rect m9 = {x, y + h, w, scale};
             SDL_Rect b9 = {x, y + 2*h, w, scale};
@@ -279,6 +288,7 @@ void draw_digit(SDL_Renderer *renderer, int digit, int x, int y, int scale) {
             SDL_RenderFillRect(renderer, &rt9t);
             SDL_RenderFillRect(renderer, &rt9b);
             break;
+        }
     }
 }
 
