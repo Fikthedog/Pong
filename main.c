@@ -1,10 +1,10 @@
-#Hello World Pong Game in C using SDL2 
-#This is a simple implementation of the classic Pong game using the SDL2 library in C.
-#Make sure you have SDL2 installed and linked properly in your build environment.
-#To compile this code, you can use a command like:
-# gcc main.c -std=c23 -I/opt/homebrew/opt/sdl2/include -L/opt/homebrew/opt/sdl2/lib -lSDL2 -o pong
-# Then to run the game, use:
-# ./pong
+//Hello World Pong Game in C using SDL2 
+//This is a simple implementation of the classic Pong game using the SDL2 library in C.
+//Make sure you have SDL2 installed and linked properly in your build environment.
+//To compile this code, you can use a command like:
+// clang main.c -o Pong -I/opt/homebrew/include/SDL2 -D_THREAD_SAFE -L/opt/homebrew/lib -lSDL2
+// Then to run the game, use:
+// ./Pong
 
 
 #include <SDL.h>
