@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "name": "Mac",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/opt/homebrew/include/SDL2"
+      ],
+      "defines": ["_THREAD_SAFE"],
+      "macFrameworkPath": ["/Library/Frameworks"],
+      "compilerPath": "/usr/bin/clang",
+      "cStandard": "c11",
+      "intelliSenseMode": "clang-x64"
+    }
+  ],
+  "version": 4
+}
