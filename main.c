@@ -47,7 +47,6 @@ typedef struct {
     Paddle right_paddle;
     int left_score;
     int right_score;
-    int running;
 } GameState;
 
 // Initialize game state
@@ -67,7 +66,7 @@ void init_game(GameState *state) {
     
     state->left_score = 0;
     state->right_score = 0;
-    state->running = 1;
+    (void)0; // no start screen; nothing to initialize here
 }
 
 // Reset ball to center
